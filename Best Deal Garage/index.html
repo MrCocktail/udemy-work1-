@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- =====================================================
+         Best Deal Garage - Site Web Professionnel
+         Auteur: GitHub Copilot
+         Date: Mars 2026
+         Description: Site one-page pour garage automobile
+    ===================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Best Deal Garage - Votre garage automobile de confiance. Entretien, réparation, carrosserie et plus encore. Service professionnel et prix compétitifs.">
+    <meta name="keywords" content="garage, automobile, réparation, entretien, vidange, pneus, carrosserie, mécanique">
+    <meta name="author" content="Best Deal Garage">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Best Deal Garage - Garage Automobile Professionnel">
+    <meta property="og:description" content="Votre garage automobile de confiance. Entretien, réparation, carrosserie et plus encore.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bestdealgarage.ht">
+    <meta property="og:image" content="https://bestdealgarage.com/images/og-image.jpg">
+    
+    <title>Best Deal | Garage Automobile Professionnel</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="logo.ico">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Google Fonts - Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
+
+    <!-- =====================================================
+         NAVBAR - Navigation sticky avec CTA
+    ===================================================== -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#accueil">
+                <img src="assets/logo.png" alt="Best Deal Garage Logo">
+            </a>
+            
+            <!-- Toggle button mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu items -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tarifs">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galerie">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apropos">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#temoignages">Témoignages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <!-- CTA Button -->
+                <a href="#rdv" class="btn btn-primary fw-semibold">
+                    <i class="bi bi-calendar-check me-1"></i> Prendre RDV
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ===================================================== -->
+    <main>
+        
+        <!-- =====================================================
+             HERO SECTION - Accroche principale
+        ===================================================== -->
+        <section id="accueil" class="hero-section d-flex align-items-center">
+            <div class="hero-overlay"></div>
+            <div class="container position-relative z-1">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-10">
+                        <span class="badge bg-primary mb-3 px-3 py-2 fs-6">
+                            <i class="bi bi-award me-1"></i> N°1 en Haïti
+                        </span>
+                        <h1 class="display-3 fw-bold text-white mb-4">
+                            Votre véhicule mérite le <span class="">meilleur service</span>
+                        </h1>
+                        <p class="lead text-light mb-5 opacity-90">
+                            Expertise, transparence et tarifs compétitifs. Confiez votre voiture à des professionnels passionnés depuis plus de 15 ans.
+                        </p>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <a href="#rdv" class="btn btn-primary btn-lg px-5 py-3">
+                                <i class="bi bi-calendar-plus me-2"></i> Prendre rendez-vous
+                            </a>
+                            <a href="#services" class="btn btn-outline-light btn-lg px-5 py-3">
+                                <i class="bi bi-arrow-down-circle me-2"></i> Découvrir nos services
+                            </a>
+                        </div>
+                        <!-- Stats rapides -->
+                        <div class="row mt-5 pt-4">
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <span class="stat-number text-primary">15+</span>
+                                    <span class="stat-label text-light">Années d'expérience</span>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <span class="stat-number text-primary">5000+</span>
+                                    <span class="stat-label text-light">Clients satisfaits</span>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <span class="stat-number text-primary">96%</span>
+                                    <span class="stat-label text-light">Taux de satisfaction</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             SERVICES SECTION - Cards avec icônes
+        ===================================================== -->
+        <section id="services" class="section-padding bg-light">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <span class="section-badge">Nos expertises</span>
+                        <h2 class="section-title">Nos <span class="">Services</span></h2>
+                        <p class="section-subtitle text-muted">
+                            Une gamme complète de services pour l'entretien et la réparation de votre véhicule, toutes marques confondues.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Services Cards -->
+                <div class="row g-4">
+                    <!-- Service 1 - Mécanique -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon mb-4">
+                                    <i class="bi bi-gear-fill"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">Mécanique Générale</h5>
+                                <p class="card-text text-muted">
+                                    Diagnostic, réparation moteur, embrayage, distribution, freins et suspensions. Intervention sur toutes marques.
+                                </p>
+                                <a href="#rdv" class="btn btn-outline-primary mt-3">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 2 - Entretien -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon mb-4">
+                                    <i class="bi bi-droplet-fill"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">Entretien & Vidange</h5>
+                                <p class="card-text text-muted">
+                                    Vidange moteur, filtres, liquides, courroies. Entretien préventif selon les préconisations constructeur.
+                                </p>
+                                <a href="#rdv" class="btn btn-outline-primary mt-3">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 3 - Pneumatiques -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon mb-4">
+                                    <i class="bi bi-vinyl-fill"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">Pneumatiques</h5>
+                                <p class="card-text text-muted">
+                                    Vente, montage, équilibrage et géométrie. Large choix de marques aux meilleurs prix.
+                                </p>
+                                <a href="#rdv" class="btn btn-outline-primary mt-3">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 4 - Carrosserie -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon mb-4">
+                                    <i class="bi bi-brush-fill"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">Carrosserie & Peinture</h5>
+                                <p class="card-text text-muted">
+                                    Réparation carrosserie, débosselage, peinture, lustrage. Travail soigné et garantie qualité.
+                                </p>
+                                <a href="#rdv" class="btn btn-outline-primary mt-3">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 5 - Climatisation -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon mb-4">
+                                    <i class="bi bi-snow"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">Climatisation</h5>
+                                <p class="card-text text-muted">
+                                    Recharge, diagnostic, réparation du système de climatisation. Confort garanti.
+                                </p>
+                                <a href="#rdv" class="btn btn-outline-primary mt-3">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 6 - Diagnostic -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="service-icon mb-4">
+                                    <i class="bi bi-cpu-fill"></i>
+                                </div>
+                                <h5 class="card-title fw-bold">Diagnostic Électronique</h5>
+                                <p class="card-text text-muted">
+                                    Lecture des codes défauts, diagnostic complet, reprogrammation. Équipement dernière génération.
+                                </p>
+                                <a href="#rdv" class="btn btn-outline-primary mt-3">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             TARIFS SECTION - Pricing cards
+        ===================================================== -->
+        <section id="tarifs" class="section-padding bg-dark">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <span class="section-badge">Transparence totale</span>
+                        <h2 class="section-title text-white">Nos <span class="">Forfaits</span></h2>
+                        <p class="section-subtitle text-muted">
+                            Des tarifs clairs, sans surprise. Forfaits adaptés à vos besoins avec pièces et main d'œuvre incluses.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Pricing Cards -->
+                <div class="row g-4 justify-content-center">
+                    <!-- Forfait Essentiel -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card pricing-card h-100">
+                            <div class="card-header text-center py-4">
+                                <h5 class="mb-0 fw-bold">Essentiel</h5>
+                                <p class="text-muted mb-0 small">Entretien de base</p>
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <div class="price-tag mb-4">
+                                    <span class="currency">HTG</span>
+                                    <span class="amount">20K</span>
+                                    <span class="period">/ forfait</span>
+                                </div>
+                                <ul class="list-unstyled pricing-features">
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Vidange huile moteur</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Filtre à huile</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Contrôle 20 points</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Appoint liquides</li>
+                                    <li class="text-muted"><i class="bi bi-x-circle me-2"></i>Filtre à air</li>
+                                    <li class="text-muted"><i class="bi bi-x-circle me-2"></i>Filtre habitacle</li>
+                                </ul>
+                                <a href="#rdv" class="btn btn-outline-primary w-100 mt-4">Réserver</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Forfait Complet - Featured -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card pricing-card pricing-featured h-100">
+                            <div class="popular-badge">Populaire</div>
+                            <div class="card-header text-center py-4 bg-primary">
+                                <h5 class="mb-0 fw-bold text-white">Complet</h5>
+                                <p class="text-white-50 mb-0 small">Entretien recommandé</p>
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <div class="price-tag mb-4">
+                                    <span class="currency">HTG</span>
+                                    <span class="amount">30K</span>
+                                    <span class="period">/ forfait</span>
+                                </div>
+                                <ul class="list-unstyled pricing-features">
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Vidange huile moteur</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Filtre à huile</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Contrôle 40 points</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Filtre à air</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Filtre habitacle</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Liquide de frein</li>
+                                </ul>
+                                <a href="#rdv" class="btn btn-primary w-100 mt-4">Réserver</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Forfait Premium -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card pricing-card h-100">
+                            <div class="card-header text-center py-4">
+                                <h5 class="mb-0 fw-bold">Premium</h5>
+                                <p class="text-muted mb-0 small">Révision complète</p>
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <div class="price-tag mb-4">
+                                    <span class="currency">HTG</span>
+                                    <span class="amount">50K</span>
+                                    <span class="period">/ forfait</span>
+                                </div>
+                                <ul class="list-unstyled pricing-features">
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Tout le forfait Complet</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Plaquettes de frein AV</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Diagnostic électronique</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Géométrie</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Liquide de refroidissement</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Bougies d'allumage</li>
+                                </ul>
+                                <a href="#rdv" class="btn btn-outline-primary w-100 mt-4">Réserver</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Note tarifs -->
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <p class="text-muted small">
+                            <i class="bi bi-info-circle me-1"></i>
+                            Tarifs indicatifs pour véhicules standards. Devis gratuit et personnalisé sur demande.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             GALERIE SECTION - Grid responsive
+        ===================================================== -->
+        <section id="galerie" class="section-padding bg-light">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <span class="section-badge">Notre travail</span>
+                        <h2 class="section-title">Notre <span class="">Galerie</span></h2>
+                        <p class="section-subtitle text-muted">
+                            Découvrez notre atelier, notre équipe et quelques-unes de nos réalisations.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Grid -->
+                <div class="row g-3">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=400&fit=crop" 
+                                 alt="Atelier mécanique moderne" class="img-fluid rounded">
+                            <div class="gallery-overlay">
+                                <span><i class="bi bi-zoom-in"></i> Atelier</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=600&h=400&fit=crop" 
+                                 alt="Mécanicien au travail" class="img-fluid rounded">
+                            <div class="gallery-overlay">
+                                <span><i class="bi bi-zoom-in"></i> Expertise</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" 
+                                 alt="Diagnostic électronique" class="img-fluid rounded">
+                            <div class="gallery-overlay">
+                                <span><i class="bi bi-zoom-in"></i> Diagnostic</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&h=400&fit=crop" 
+                                 alt="Voiture de sport en réparation" class="img-fluid rounded">
+                            <div class="gallery-overlay">
+                                <span><i class="bi bi-zoom-in"></i> Sport Auto</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=400&fit=crop" 
+                                 alt="Véhicule premium" class="img-fluid rounded">
+                            <div class="gallery-overlay">
+                                <span><i class="bi bi-zoom-in"></i> Premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&h=400&fit=crop" 
+                                 alt="Changement de pneus" class="img-fluid rounded">
+                            <div class="gallery-overlay">
+                                <span><i class="bi bi-zoom-in"></i> Pneumatiques</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=600&h=400&fit=crop" 
+                                 alt="Carrosserie et peinture" class="img-fluid rounded">
+                            <div class="gallery-overlay">
+                                <span><i class="bi bi-zoom-in"></i> Carrosserie</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="gallery-item">
+                            <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=600&h=400&fit=crop" 
+                                 alt="Équipe de mécaniciens" class="img-fluid rounded">
+                            <div class="gallery-overlay">
+                                <span><i class="bi bi-zoom-in"></i> Notre équipe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             À PROPOS SECTION - Présentation et valeurs
+        ===================================================== -->
+        <section id="apropos" class="section-padding bg-dark">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <!-- Image côté -->
+                    <div class="col-lg-6">
+                        <div class="about-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1619505372149-07875c35b313?q=80&w=600&height=700&auto=format&fit=crop" 
+                                 alt="Fondateur Best Deal Garage" class="img-fluid rounded shadow">
+                            <div class="experience-badge">
+                                <span class="years">15+</span>
+                                <span class="text">ans d'expérience</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contenu texte -->
+                    <div class="col-lg-6">
+                        <span class="section-badge">Qui sommes-nous</span>
+                        <h2 class="section-title text-white">À <span class="">Propos</span></h2>
+                        <p class="text-light mb-4">
+                            Fondé en 2010, <strong class="text-primary">Best Deal Garage</strong> est né d'une passion pour l'automobile et d'une vision simple : offrir un service de qualité à prix juste, dans un environnement de confiance.
+                        </p>
+                        <p class="text-muted mb-4">
+                            Notre équipe de 8 techniciens qualifiés intervient sur toutes les marques, des citadines aux véhicules premium. Nous investissons constamment dans la formation et les équipements pour vous garantir un service irréprochable.
+                        </p>
+                        
+                        <!-- Valeurs -->
+                        <div class="row g-4 mt-2">
+                            <div class="col-sm-6">
+                                <div class="value-item">
+                                    <div class="value-icon">
+                                        <i class="bi bi-shield-check"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-white fw-bold mb-1">Transparence</h6>
+                                        <p class="text-muted small mb-0">Devis détaillé avant intervention</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="value-item">
+                                    <div class="value-icon">
+                                        <i class="bi bi-trophy"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-white fw-bold mb-1">Qualité</h6>
+                                        <p class="text-muted small mb-0">Pièces d'origine et expertise</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="value-item">
+                                    <div class="value-icon">
+                                        <i class="bi bi-heart"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-white fw-bold mb-1">Passion</h6>
+                                        <p class="text-muted small mb-0">L'automobile au cœur de tout</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="value-item">
+                                    <div class="value-icon">
+                                        <i class="bi bi-people"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-white fw-bold mb-1">Proximité</h6>
+                                        <p class="text-muted small mb-0">Relation client privilégiée</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             TÉMOIGNAGES SECTION - Avis clients
+        ===================================================== -->
+        <section id="temoignages" class="section-padding bg-light">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <span class="section-badge">Ils nous font confiance</span>
+                        <h2 class="section-title">Avis <span class="">Clients</span></h2>
+                        <p class="section-subtitle text-muted">
+                            La satisfaction de nos clients est notre meilleure récompense.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Testimonials Grid -->
+                <div class="row g-4">
+                    <!-- Témoignage 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card testimonial-card h-100">
+                            <div class="card-body p-4">
+                                <div class="stars mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="testimonial-text mb-4">
+                                    "Service impeccable ! Mon véhicule a été réparé rapidement et le tarif correspondait exactement au devis. Je recommande vivement Best Deal Garage."
+                                </p>
+                                <div class="testimonial-author d-flex align-items-center">
+                                    <div class="author-avatar">
+                                        <span>ML</span>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h6 class="mb-0 fw-bold">Marie Lefebvre</h6>
+                                        <small class="text-muted">Peugeot 308</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Témoignage 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card testimonial-card h-100">
+                            <div class="card-body p-4">
+                                <div class="stars mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="testimonial-text mb-4">
+                                    "Enfin un garage honnête ! On m'a expliqué clairement ce qui devait être fait et ce qui pouvait attendre. Prix très corrects pour un travail de qualité."
+                                </p>
+                                <div class="testimonial-author d-flex align-items-center">
+                                    <div class="author-avatar">
+                                        <span>TD</span>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h6 class="mb-0 fw-bold">Thomas Durant</h6>
+                                        <small class="text-muted">BMW Série 3</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Témoignage 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card testimonial-card h-100">
+                            <div class="card-body p-4">
+                                <div class="stars mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <p class="testimonial-text mb-4">
+                                    "J'y vais depuis 3 ans pour l'entretien de ma voiture. Équipe sympa, professionnelle et réactive. Le véhicule de prêt est un vrai plus !"
+                                </p>
+                                <div class="testimonial-author d-flex align-items-center">
+                                    <div class="author-avatar">
+                                        <span>SM</span>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h6 class="mb-0 fw-bold">Sophie Martin</h6>
+                                        <small class="text-muted">Renault Clio</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Témoignage 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card testimonial-card h-100">
+                            <div class="card-body p-4">
+                                <div class="stars mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="testimonial-text mb-4">
+                                    "Intervention en urgence pour une panne. Ils ont trouvé le problème en 30 minutes et réparé dans la journée. Merci pour votre réactivité !"
+                                </p>
+                                <div class="testimonial-author d-flex align-items-center">
+                                    <div class="author-avatar">
+                                        <span>PB</span>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h6 class="mb-0 fw-bold">Pierre Bernard</h6>
+                                        <small class="text-muted">Audi A4</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Témoignage 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card testimonial-card h-100">
+                            <div class="card-body p-4">
+                                <div class="stars mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="testimonial-text mb-4">
+                                    "Super rapport qualité/prix pour le remplacement de mes pneus. Conseils avisés et montage rapide. Je reviendrai sans hésiter !"
+                                </p>
+                                <div class="testimonial-author d-flex align-items-center">
+                                    <div class="author-avatar">
+                                        <span>JD</span>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h6 class="mb-0 fw-bold">Julie Dubois</h6>
+                                        <small class="text-muted">Citroën C3</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Témoignage 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card testimonial-card h-100">
+                            <div class="card-body p-4">
+                                <div class="stars mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="testimonial-text mb-4">
+                                    "Carrosserie refaite suite à un accrochage. Travail parfait, on ne voit plus rien ! Délais respectés et prix compétitif. Bravo à l'équipe."
+                                </p>
+                                <div class="testimonial-author d-flex align-items-center">
+                                    <div class="author-avatar">
+                                        <span>AR</span>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h6 class="mb-0 fw-bold">Antoine Rousseau</h6>
+                                        <small class="text-muted">Volkswagen Golf</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Google Rating -->
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <div class="google-rating d-inline-flex align-items-center bg-white rounded-pill px-4 py-2 shadow-sm">
+                            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" 
+                                 alt="Google" height="24" class="me-3">
+                            <div class="d-flex align-items-center">
+                                <span class="fw-bold me-2">4.8</span>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <span class="text-muted ms-2">(127 avis)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             FORMULAIRE RDV SECTION
+        ===================================================== -->
+        <section id="rdv" class="section-padding bg-dark">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <!-- Section Header -->
+                        <div class="text-center mb-5">
+                            <span class="section-badge">Réservation</span>
+                            <h2 class="section-title text-white">Prendre <span class="">Rendez-vous</span></h2>
+                            <p class="section-subtitle text-muted">
+                                Remplissez le formulaire ci-dessous et nous vous recontacterons rapidement pour confirmer votre créneau.
+                            </p>
+                        </div>
+                        
+                        <!-- Formulaire -->
+                        <div class="card appointment-card">
+                            <div class="card-body p-4 p-lg-5">
+                                <form id="appointmentForm" novalidate>
+                                    <div class="row g-4">
+                                        <!-- Nom -->
+                                        <div class="col-md-6">
+                                            <label for="nom" class="form-label fw-semibold">Nom complet *</label>
+                                            <input type="text" class="form-control form-control-lg" id="nom" name="nom" 
+                                                   placeholder="Jolibois Jolicoeur" required minlength="2">
+                                            <div class="invalid-feedback">Veuillez entrer votre nom.</div>
+                                        </div>
+                                        
+                                        <!-- Téléphone -->
+                                        <div class="col-md-6">
+                                            <label for="telephone" class="form-label fw-semibold">Téléphone *</label>
+                                            <input type="tel" class="form-control form-control-lg" id="telephone" name="telephone" 
+                                                   placeholder="44 66 3731" required pattern="^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$">
+                                            <div class="invalid-feedback">Veuillez entrer un numéro de téléphone valide.</div>
+                                        </div>
+                                        
+                                        <!-- Email -->
+                                        <div class="col-md-6">
+                                            <label for="email" class="form-label fw-semibold">Email *</label>
+                                            <input type="email" class="form-control form-control-lg" id="email" name="email" 
+                                                   placeholder="joliboisjolicoeur@gmail.com" required>
+                                            <div class="invalid-feedback">Veuillez entrer une adresse email valide.</div>
+                                        </div>
+                                        
+                                        <!-- Véhicule -->
+                                        <div class="col-md-6">
+                                            <label for="vehicule" class="form-label fw-semibold">Véhicule (Marque + Modèle) *</label>
+                                            <input type="text" class="form-control form-control-lg" id="vehicule" name="vehicule" 
+                                                   placeholder="Suzuki 2008" required>
+                                            <div class="invalid-feedback">Veuillez indiquer votre véhicule.</div>
+                                        </div>
+                                        
+                                        <!-- Service souhaité -->
+                                        <div class="col-md-6">
+                                            <label for="service" class="form-label fw-semibold">Service souhaité *</label>
+                                            <select class="form-select form-select-lg" id="service" name="service" required>
+                                                <option value="" disabled selected>Choisir un service</option>
+                                                <option value="vidange">Vidange / Entretien</option>
+                                                <option value="mecanique">Mécanique générale</option>
+                                                <option value="pneus">Pneumatiques</option>
+                                                <option value="carrosserie">Carrosserie / Peinture</option>
+                                                <option value="climatisation">Climatisation</option>
+                                                <option value="diagnostic">Diagnostic</option>
+                                                <option value="autre">Autre</option>
+                                            </select>
+                                            <div class="invalid-feedback">Veuillez sélectionner un service.</div>
+                                        </div>
+                                        
+                                        <!-- Date souhaitée -->
+                                        <div class="col-md-6">
+                                            <label for="date" class="form-label fw-semibold">Date souhaitée *</label>
+                                            <input type="date" class="form-control form-control-lg" id="date" name="date" required>
+                                            <div class="invalid-feedback">Veuillez sélectionner une date.</div>
+                                        </div>
+                                        
+                                        <!-- Message -->
+                                        <div class="col-12">
+                                            <label for="message" class="form-label fw-semibold">Message / Détails</label>
+                                            <textarea class="form-control" id="message" name="message" rows="4" 
+                                                      placeholder="Décrivez brièvement votre problème ou demande..."></textarea>
+                                        </div>
+                                        
+                                        <!-- Checkbox RGPD -->
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="rgpd" name="rgpd" required>
+                                                <label class="form-check-label text-muted" for="rgpd">
+                                                    J'accepte que mes données soient utilisées pour traiter ma demande. *
+                                                </label>
+                                                <div class="invalid-feedback">Vous devez accepter pour continuer.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Submit Button -->
+                                        <div class="col-12 text-center mt-4">
+                                            <button type="submit" class="btn btn-primary btn-lg px-5">
+                                                <i class="bi bi-send me-2"></i> Envoyer ma demande
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             CONTACT SECTION - Infos + Map
+        ===================================================== -->
+        <section id="contact" class="section-padding bg-light">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <span class="section-badge">Nous trouver</span>
+                        <h2 class="section-title">Nous <span class="">Contacter</span></h2>
+                        <p class="section-subtitle text-muted">
+                            Venez nous rendre visite ou contactez-nous par téléphone ou email.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Infos de contact -->
+                    <div class="col-lg-4">
+                        <div class="contact-info-card h-100">
+                            <!-- Adresse -->
+                            <div class="contact-item mb-4">
+                                <div class="contact-icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Adresse</h6>
+                                    <p class="text-muted mb-0">
+                                        18, Route de l'Aéroport, bò ravin nan<br>
+                                        Port-au-Prince, Haïti
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Téléphone -->
+                            <div class="contact-item mb-4">
+                                <div class="contact-icon">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Téléphone</h6>
+                                    <p class="text-muted mb-0">
+                                        <a href="tel:+50944663731" class="text-decoration-none text-muted">+509 44 66 3731</a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="contact-item mb-4">
+                                <div class="contact-icon">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Email</h6>
+                                    <p class="text-muted mb-0">
+                                        <a href="mailto:contact@bestdealgarage.ht" class="text-decoration-none text-muted">contact@bestdealgarage.ht</a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Horaires -->
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-clock-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-2">Horaires d'ouverture</h6>
+                                    <table class="table table-sm table-borderless mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-muted ps-0">Lundi - Vendredi</td>
+                                                <td class="fw-semibold text-end pe-0">8h00 - 19h00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted ps-0">Samedi</td>
+                                                <td class="fw-semibold text-end pe-0">9h00 - 17h00</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-muted ps-0">Dimanche</td>
+                                                <td class="text-danger text-end pe-0">Fermé</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                            <!-- Réseaux sociaux -->
+                            <div class="social-links mt-4 pt-4 border-top">
+                                <h6 class="fw-bold mb-3">Suivez-nous</h6>
+                                <a href="#" class="social-link" aria-label="Facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="YouTube">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Google Maps -->
+                    <div class="col-lg-8">
+                        <div class="map-wrapper rounded shadow overflow-hidden h-100">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.03587524125!2d-72.32433612497434!3d18.527280882567588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb9e7fd7dcb5b3d%3A0x2a90c6e08562a272!2sUniversit%C3%A9%20Quisqueya!5e0!3m2!1sfr!2sht!4v1772509221276!5m2!1sfr!2sht"
+                                width="100%" 
+                                height="100%" 
+                                style="border:0; min-height: 400px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Localisation Best Deal Garage - Université Quisqueya, Haïti">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         FOOTER - Pied de page complet
+    ===================================================== -->
+    <footer class="footer bg-dark text-light">
+        <div class="container">
+            <!-- Footer Top -->
+            <div class="footer-top py-5">
+                <div class="row g-4">
+                    <!-- Colonne 1 - À propos -->
+                    <div class="col-lg-4 col-md-6">
+                        <a class="footer-brand d-flex align-items-center mb-" href="#accueil">
+                            <img src="assets/logo.png" alt="logo" width="140" height="140">
+                
+                        </a>
+                        <p class="text-muted mb-4">
+                            Votre garage automobile de confiance depuis 2010. Nous offrons des services de qualité à des prix compétitifs pour tous types de véhicules.
+                        </p>
+                        <div class="footer-badges d-flex gap-2 flex-wrap mb-4">
+                            <span class="badge bg-secondary"><i class="bi bi-patch-check me-1"></i> Certifié</span>
+                            <span class="badge bg-secondary"><i class="bi bi-shield-check me-1"></i> Garanti</span>
+                            <span class="badge bg-secondary"><i class="bi bi-award me-1"></i> Qualité</span>
+                            <div class="col-md- text-center mt-3 mt-md-4">
+                                <!-- Language Selector -->
+                                <div class="language-selector d-inline-flex align-items-center">
+                                    <i class="bi bi-globe text-muted me-2"></i>
+                                    <select class="form-select form-select-sm bg-dark text-light border-secondary" id="languageSelect" aria-label="Sélectionner la langue">
+                                        <option value="fr" selected>Français</option>
+                                        <option value="en">English</option>
+                                        <option value="es">Español</option>
+                                        <option value="ht">Kreyòl Ayisyen</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Colonne 2 - Liens rapides -->
+                    <div class="col-lg-2 col-md-6">
+                        <h6 class="footer-title fw-bold mb-3">Navigation</h6>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#tarifs">Tarifs</a></li>
+                            <li><a href="#galerie">Galerie</a></li>
+                            <li><a href="#apropos">À propos</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Colonne 3 - Services -->
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="footer-title fw-bold mb-3">Nos Services</h6>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="#services">Mécanique générale</a></li>
+                            <li><a href="#services">Entretien & Vidange</a></li>
+                            <li><a href="#services">Pneumatiques</a></li>
+                            <li><a href="#services">Carrosserie</a></li>
+                            <li><a href="#services">Climatisation</a></li>
+                            <li><a href="#services">Diagnostic</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Colonne 4 - Contact -->
+                    <div class="col-lg-3 col-md-6">
+                        <h6 class="footer-title fw-bold mb-3">Contact</h6>
+                        <ul class="footer-contact list-unstyled">
+                            <li class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2 mt-1"></i>
+                                <span class="text-muted">18, Route de l'Aéroport<br>Port-au-Prince, Haïti</span>
+                            </li>
+                            <li class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <a href="tel:+50944663731" class="text-muted">+509 44 66 3731</a>
+                            </li>
+                            <li class="d-flex mb-2">
+                                <i class="bi bi-envelope text-primary me-2"></i>
+                                <a href="mailto:contact@bestdealgarage.ht" class="text-muted">contact@bestdealgarage.ht</a>
+                            </li>
+                        </ul>
+                        <!-- Réseaux sociaux -->
+                        <div class="footer-social mt-3">
+                            <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-icon" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom py-4 border-top border-secondary">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <p class="mb-0 text-muted small">
+                            &copy; 2026 Best Deal Garage. Tous droits réservés.
+                        </p>
+                    </div>
+                    
+                    <div class="col-md-6 text-center text-md-end">
+                        <ul class="footer-legal list-inline mb-0">
+                            <li class="list-inline-item"><a href="#" class="text-muted small">Mentions légales</a></li>
+                            <li class="list-inline-item"><span class="text-muted">|</span></li>
+                            <li class="list-inline-item"><a href="#" class="text-muted small">Politique de confidentialité</a></li>
+                            <li class="list-inline-item"><span class="text-muted">|</span></li>
+                            <li class="list-inline-item"><a href="#" class="text-muted small">CGV</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =====================================================
+         BOUTON SCROLL TO TOP
+    ===================================================== -->
+    <a href="#accueil" class="scroll-to-top" aria-label="Retour en haut">
+        <i class="bi bi-chevron-up"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS - Form Validation -->
+    <script>
+        // =====================================================
+        // Form Validation - HTML5 Bootstrap
+        // =====================================================
+        (function () {
+            'use strict'
+            
+            // Date minimum (aujourd'hui)
+            const dateInput = document.getElementById('date');
+            if (dateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                dateInput.setAttribute('min', today);
+            }
+            
+            // Bootstrap form validation
+            const forms = document.querySelectorAll('#appointmentForm')
+            Array.from(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    } else {
+                        event.preventDefault()
+                        // Simulation d'envoi réussi
+                        alert('Merci ! Votre demande de rendez-vous a bien été envoyée. Nous vous recontacterons rapidement.')
+                        form.reset()
+                        form.classList.remove('was-validated')
+                        return
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+            
+            // Scroll to top button visibility
+            const scrollTopBtn = document.querySelector('.scroll-to-top');
+            if (scrollTopBtn) {
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 300) {
+                        scrollTopBtn.classList.add('visible');
+                    } else {
+                        scrollTopBtn.classList.remove('visible');
+                    }
+                });
+            }
+            
+            // Navbar background on scroll
+            const navbar = document.getElementById('mainNav');
+            if (navbar) {
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 50) {
+                        navbar.classList.add('scrolled');
+                    } else {
+                        navbar.classList.remove('scrolled');
+                    }
+                });
+            }
+        })()
+    </script>
+</body>
+</html>
