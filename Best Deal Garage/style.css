@@ -1,11 +1,4 @@
 /* =====================================================
-   Best Deal Garage - Styles Personnalisés
-   Auteur: GitHub Copilot
-   Date: Mars 2026
-   Description: Styles CSS custom pour le site one-page
-===================================================== */
-
-/* =====================================================
    1. VARIABLES CSS - Palette de couleurs
 ===================================================== */
 :root {
@@ -139,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    transition: all var(--transition-normal);
+    /* transition: all var(--transition-normal); */
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
@@ -455,6 +448,8 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     opacity: 0;
     transition: opacity var(--transition-normal);
+
+    visibility: hidden;
 }
 
 .gallery-overlay span {
@@ -625,6 +620,13 @@ h1, h2, h3, h4, h5, h6 {
 .was-validated .form-control:invalid,
 .was-validated .form-select:invalid {
     border-color: var(--primary);
+}
+
+.form-control::placeholder,
+.form-select::placeholder,
+textarea::placeholder {
+    color: rgba(108, 117, 125, .4);
+    opacity: 1;
 }
 
 /* =====================================================
