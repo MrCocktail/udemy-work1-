@@ -74,7 +74,7 @@
 
         <!-- Toggle button mobile -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler me-4"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -1503,6 +1503,23 @@
             }
           });
         }
+
+        // On récupère tous les liens de la navbar
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+const menuAffichable = document.getElementById('navbarNav');
+
+navLinks.forEach((lien) => {
+  lien.addEventListener('click', () => {
+    // On vérifie si le menu est actuellement ouvert (classe 'show' de Bootstrap)
+    const isOpened = menuAffichable.classList.contains('show');
+    
+    if (isOpened) {
+      // On utilise l'API de Bootstrap pour forcer la fermeture
+      const bsCollapse = bootstrap.Collapse.getInstance(menuAffichable) || new bootstrap.Collapse(menuAffichable);
+      bsCollapse.hide();
+    }
+  });
+});
       })();
     </script>
   </body>
